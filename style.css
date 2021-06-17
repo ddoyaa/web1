@@ -1,0 +1,55 @@
+.drop {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  top:0px; bottom:0; right:0; left:0;
+  background-color: lightblue;
+  border-radius: 50% 1px 50% 50%;
+  -webkit-transform: rotate(-45deg);  
+  -webkit-animation: drip 0.9s infinite;
+}
+
+#drip
+
+{
+  height: 40%;
+  width: 50%;
+    margin: 0 auto;
+ animation: drip;
+
+}
+
+@keyframes drip {
+ 0% {
+    width: 0px;
+    height: 0px;
+    top: -300px;
+ 
+  }
+  
+  25% {
+    
+    width: 20px;
+    height: 20px;
+    top: -200px;
+  }
+  
+  50% {
+    width: 20px;
+    height: 20px;
+    top: -100px;
+  }
+  
+  75% {
+    
+    width: 20px;
+    height: 20px;
+    top: 5px;
+  }
+  100% { 
+    width: 20px;
+    height: 20px; 
+    top: 20px;
+  }
+}

@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>'ㅅ'</title>
+<style>
+
+* {margin:0; padding:0;}
+#wrap {width: 100%; margin: 0 auto; }
+header {margin-top: 0;}
+
+
+
+
+	#flower { position:absolute; float: left; margin-top: -110px; margin-left: 200px; z-index: -1;}
+	
+	
+	
+	input[type=text] { z-index: 1;
+  width: 200%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+		background-color: #f8ebe0;
+}
+
+label1 { float: left;  z-index: 1;
+margin-top: 660px;
+margin-left: 430px;
+}
+
+input[type=text]:focus {
+  background-color: #ffe0c6;
+}
+
+	
+	
+	
+	#answer {   position:absolute; float:left; margin-top:50px; margin-left: 130px; margin-bottom:150px;
+		-webkit-filter: brightness(100%);}
+	
+	#answer:hover {
+		-webkit-filter: brightness(105%);
+	}
+	
+	
+		#flower2 {  position:absolute; float:left;  margin-top:730px; margin-left:530px;
+		 font-size:  20px; font-family: 'MapoFlowerIsland', sans-serif; }
+	
+	
+	
+	
+@media screen and ( max-width : 600px ) and (min-width : 262px ){
+    /*500px 이상, 1000px이하일때*/
+    #flower {
+        width: 200%; float:none; margin-left: -100px; margin-top:70px;
+    }
+    
+    #flower2{
+		
+        text-align: center;
+        width: 61%;
+		float:left;
+		margin-top:740px;
+		margin-left: 90px; 
+   }
+    #answer {
+        width: 100%; float:none; margin-left: 85px; 
+		
+    }
+
+	#menubar ul li { text-align: center; 
+	font-size: 20px;
+    overflow : hidden;
+		margin-left: 5px;
+	width : 100%;  list-style-type : none; /* 마커 삭제 */
+	padding-top : 10px;  /* top=bottom=50px; left=right=50px; */ 
+	}
+
+	
+	#body { width: 100%; 
+		
+    }
+	
+	input[type=text] {
+  width: 150%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+		background-color: #f8ebe0;
+}
+
+label1 { float: left;
+margin-top: 600px;
+margin-left: 25px;
+}
+
+input[type=text]:focus {
+  background-color: #ffe0c6;
+}
+
+}
+
+
+@media screen and (min-width : 1500px ){/*min-width ~~이상일 때, max-width ~~이하일때*/
+    #flower{
+        width: 1200px;
+		margin-top: -80px; float:left; margin-left:500px; /*뷰포트 너비가 500px보다 작을 때 원하는 이미지 크기 넣기*/
+    }
+    
+    #flower2{
+        text-align: center; 
+        width: 96%;
+		float:none; margin-left:20px; margin-top: 750px;
+    }
+    #answer{
+        width: 94%; float:none; margin-left: 150px;
+	}
+	
+	
+	
+		input[type=text] {
+  width: 200%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+		background-color: #f8ebe0;
+}
+
+label1 { float: left;
+margin-top: 650px;
+margin-left: 650px;
+}
+
+input[type=text]:focus {
+  background-color: #ffe0c6;
+}
+
+}
+}
+
+#clear {clear: both;}
+
+body  {background-color: #f8ebe0; background-image:url("배경3.png");
+	background-repeat: repeat-x; position: relative; overflow-x:hidden; }
+#menubar{ background : #f8ebe0; font-size: 20px; text-align: center; 
+
+}
+   #menubar ul { /* 여백과 패딩 모두 0 */
+	margin-top : 15px; 
+	margin-right: 30px;
+	width : 100%; 
+	   heigth: 1000px;/* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+	   display: table;
+   text-align: center;
+	   float: right;
+	   
+	 
+}
+#menubar ul li { overflow : hidden; z-index: 2;
+
+	display : inline-block; /* 새 줄로 넘어가지 않게 */
+	list-style-type : none; /* 마커 삭제 */
+	padding : 5%;  /* top=bottom=50px; left=right=50px; */ 
+}
+#menubar ul li a {
+            font-family: 'Courier New'; 
+	color : black;
+  	text-decoration : none; /* 링크 보이지 않게 */
+}
+#menubar ul li a:hover {
+ 	color : rgb(77, 0, 0);  /* 마우스 올라 갈 때 색 */
+}
+
+
+
+</style>
+</head>
+<body>
+
+	<center>
+<div id="wrap">
+<nav id="menubar">
+
+	<ul>       
+		<li><a href="main.html">main</a></li>
+		<li><a href="Seed.html">Flowerpot</a></li>
+		<li><a href="about.html">about</a></a></li>
+	</ul>
+	</center>
+<br>
+<br>
+
+<div id="flower">
+     <img src="anemonecard.png" width="70%" >
+         </div>
+	
+	
+	
+	<div id="flower2">
+     꽃다발과 엽서가 함께 배송됩니다!
+         </div>
+	
+<form action="someplace.php">
+                <label1 for="message">Name</label>
+                <input type="text" id="fname">
+            </div>
+            <div><br>
+                <label for="message">telephone</label>
+                <input type="text" id="add">
+            </div><br>
+            <div>
+                <label for="message">address</label>
+                 <input type="text" id="add">
+            </div><br>
+	<div>
+	  <label for="message">message</label>
+                 <input type="text" id="add">
+            </div>
+      
+    </form>
+
+
+	<a href=".html">
+	<div id="answer">
+	<img src="말.png" width: "100%">
+	</div></a>
+	</body>
+
+
+	</body>
+
+</html>

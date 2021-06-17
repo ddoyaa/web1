@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>'ㅅ'</title>
+  <link rel="stylesheet" href="./style.css">
+<style>
+	
+	#flower { position:absolute; float: left; margin-top: 300px; margin-left:500px; 
+        }
+	#flower2 {  position:absolute; float:left;  margin-top:150px; margin-left:600px;
+		 font-size:  20px; font-family: 'MapoFlowerIsland', sans-serif; }
+	
+	body  {background-color: #f8ebe0; background-image:url("배경3.png");
+		background-repeat : no-repeat;}
+	
+	
+	
+	@media screen and ( max-width : 600px ) and (min-width : 262px ){
+    /*500px 이상, 1000px이하일때*/
+    #flower {
+        width: 530px; float:none; margin-left: 20px; margin-top:300px;
+    }
+    
+    #flower2{
+		
+        text-align: center;
+        width: 100%;
+		float:left;
+		margin-top:150px;
+		margin-left: 5px; 
+   }
+	
+		.drop { margin-top: 400px;}
+		
+	}
+	
+	
+	@media screen and (min-width : 1500px ){/*min-width ~~이상일 때, max-width ~~이하일때*/
+    #flower{
+       width: 530px;
+		margin-top:400px; float:none; 
+		 margin-left:720px; /*뷰포트 너비가 500px보다 작을 때 원하는 이미지 크기 넣기*/
+    }
+    
+    #flower2{
+        text-align: center; 
+        width: 96%;
+		float:none; margin-left:20px; margin-top: 200px; 
+    }
+	
+
+	
+	}
+#clear {clear: both;}
+
+	
+	
+</head>
+	</style>
+<body>
+<!-- partial:index.partial.html -->
+<div class="drop">
+        
+</div>
+<!-- partial -->
+  <a href="freesiaflower.html"><div id="flower">
+     <img src="꽃봉오리.png" width="80%" >
+	  </div></a>
+	<div id="flower2">
+     꽃봉오리를 클릭해주세요.
+	  </div>
+</body>
+</html>
